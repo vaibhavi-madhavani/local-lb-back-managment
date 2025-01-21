@@ -13,7 +13,7 @@ let sequelize: any;
 if (global.config.use_env_variable) {
     sequelize = new Sequelize.Sequelize(global.config.use_env_variable, config);
 } else {
-    sequelize = new Sequelize.Sequelize(process.env.DATABASE || "labour_management", process.env.USERNAME || "root", process.env.password || "", config);
+    sequelize = new Sequelize.Sequelize(process.env.DATABASE || "labour_management", process.env.USERNAME || "root", process.env.PASSWORD || "", config);
 }
 
 sequelize.authenticate().then(() => {

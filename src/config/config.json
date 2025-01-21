@@ -1,0 +1,25 @@
+{
+	"development": {
+		"use_env_variable": false,
+		"port": 3306,
+		"username": "u951606551_test",
+		"password": "wC=CqL0Y~",
+		"database": "u951606551_testing",
+		"host": "srv1675.hstgr.io",
+		"dialect": "mysql",
+		"queueLimit": 0,
+		"connectionLimit": 0,
+		"logging": false,
+		"pool": {
+			"min": 0,
+			"max": 10,
+			"acquire": 30000,
+			"idle": 10000
+		},
+		"dialectOptions": {
+			"decimalNumbers": true,
+			"maxPreparedStatements": 100
+		}
+	},
+	"API_BASE_URL": "http://localhost:4000/uploads"
+}
